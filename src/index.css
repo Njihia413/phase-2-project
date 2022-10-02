@@ -22,6 +22,40 @@ code {
     monospace;
 }
 
+:root {
+  --main-color: #bb1919;
+  --btn: #aa35d6;
+}
+
+.color-main {
+  color: var(--btn);
+}
+
+.headings {
+  font-family: 'Poppins';
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color:#ea272d;
+  border-color: #ea272d;
+}
+
+.btn-primary:hover {
+  background-color: #a30c11;
+  border-color: #a30c11;
+}
+
+.btn-info {
+  background-color: #e12235;
+}
+
+
+
+
 /*Navbar*/
 .navbar-brand {
   font-size: 2rem;
@@ -47,4 +81,44 @@ code {
 
 .nav-item {
   text-transform: uppercase;
+}
+
+/*Headlines Section*/
+.card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  height: 71vh;
+}
+
+.headline-text {
+  margin-top: 210px;
+  color: white;
+}
+
+.headline {
+  margin-top: 0px;
+  color: white;
+}
+
+.news-headings a {
+  color: white;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.news-right .news-headings a {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.news-right .card-image {
+  height: 195px;
+}
+
+.news-right .news-headings a {
+  font-weight: 900;
+  color: #fff;
 }
