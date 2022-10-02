@@ -1,13 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*Navbar*/
+.navbar-brand {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+}
+.navbar-brand:hover {
+  color: whitesmoke;
+}
+
+.navbar-expand-lg li a {
+  color: white;
+}
+
+.navbar {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+
+.nav {
+  color: white;
+}
+
+.nav-item {
+  text-transform: uppercase;
 }
