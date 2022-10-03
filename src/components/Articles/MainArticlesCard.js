@@ -1,10 +1,12 @@
 import React from "react";
+import AlJazeeraArticlesCard from "./AlJazeeraArticlesCard";
 import BBCArticlesCard from "./BBCArticlesCard";
 import CNNArticlesCard from "./CNNArticlesCard";
 
-function MainArticlesCard ({ cnnArticles, bbcArticles }) {
+function MainArticlesCard ({ cnnArticles, bbcArticles, aljazeeraArticles }) {
     //console.log(cnnArticles)
     //console.log(bbcArticles)
+   //console.log(aljazeeraArticles)
     const cnnArticlesList = cnnArticles.map((cnnArticle => {
         return (
             <CNNArticlesCard
@@ -17,8 +19,17 @@ function MainArticlesCard ({ cnnArticles, bbcArticles }) {
     const bbcArticlesList = bbcArticles.map((bbcArticle => {
         return (
             <BBCArticlesCard
-            key={bbcArticle.source.id}
+            key={bbcArticle.description}
             bbcArticle={bbcArticle}
+            />
+        )
+    }))
+
+    const aljazeeraArticlesList = aljazeeraArticles.map((aljazeeraArticle => {
+        return (
+            <AlJazeeraArticlesCard
+            key={aljazeeraArticle.description}
+            aljazeeraArticle={aljazeeraArticle}
             />
         )
     }))
@@ -32,6 +43,10 @@ function MainArticlesCard ({ cnnArticles, bbcArticles }) {
             <h3 className="text-uppercase headings text-center mt-5 mb-4">top BBC News</h3>
             <div className="row">
                 {bbcArticlesList}
+            </div>
+            <h3 className="text-uppercase headings text-center mt-5 mb-4">top Al-Jazeera English News</h3>
+            <div className="row">
+                {aljazeeraArticlesList}
             </div>
         </div>
     )

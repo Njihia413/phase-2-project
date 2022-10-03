@@ -3,9 +3,11 @@ import ArticlesList from "./ArticlesList";
 
 function Articles () {
     const cnnArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=8";
-    const bbcArticlesUrl  = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=8"
+    const bbcArticlesUrl  = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=8";
+    const aljazeeraArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=al-jazeera-english&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=8"
     const [cnnArticles, setcnnArticles] = useState([]);
     const [bbcArticles, setbbcArticles] = useState([]);
+    const [aljazeeraArticles, setaljazeeraArticles] = useState([]);
 
     //Fetch CNN Articles
     useEffect(() => {
@@ -22,9 +24,16 @@ function Articles () {
         .then(data => setbbcArticles(data.articles))
     },[])
 
+    //Fetch Al-Jazeera English Articles
+    useEffect(() => {
+        fetch(`${aljazeeraArticlesUrl}`)
+        .then(response => response.json())
+        .then(data => setaljazeeraArticles(data.articles))
+    },[])
+
     return (
         <div>
-            <ArticlesList cnnArticles={cnnArticles} bbcArticles={bbcArticles} setcnnArticles={setcnnArticles} setbbcArticles={setbbcArticles}/>
+            <ArticlesList cnnArticles={cnnArticles} bbcArticles={bbcArticles} aljazeeraArticles={aljazeeraArticles} setcnnArticles={setcnnArticles} setbbcArticles={setbbcArticles} setaljazeeraArticles={setaljazeeraArticles}/>
         </div>
     )
 }
