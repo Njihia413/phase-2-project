@@ -24,7 +24,7 @@ code {
 
 :root {
   --main-color: #bb1919;
-  --btn: #aa35d6;
+  --btn: #ea272d;
 }
 
 .color-main {
@@ -105,7 +105,7 @@ a {
 .news-headings a {
   color: white;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
 
 .news-right .news-headings a {
@@ -121,4 +121,31 @@ a {
 .news-right .news-headings a {
   font-weight: 900;
   color: #fff;
+}
+
+/*News Articles*/
+.card {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 11px 5px rgb(103 58 183 / 10%);
+  margin-bottom: 1px;
+  margin-top: 30px;
+  padding: 1px 1px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px 5px rgba(70, 41, 121, 0.25);
+  background: linear-gradient(-19deg, rgba(235, 174, 8, 0.95) 0px);
+}
+
+.card-img-top {
+  height: 35vh;
+}
+
+
+.top-news .card {
+  height: 460px;
 }
