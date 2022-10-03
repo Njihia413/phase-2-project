@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import ArticlesList from "./ArticlesList";
 
 function Articles () {
-    const cnnArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=e05ca232a09f4c6394d6716dbcde7fef&pageSize=8";
-    const bbcArticlesUrl  = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=e05ca232a09f4c6394d6716dbcde7fef&pageSize=8"
+    const cnnArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=8";
+    const bbcArticlesUrl  = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=8"
     const [cnnArticles, setcnnArticles] = useState([]);
     const [bbcArticles, setbbcArticles] = useState([]);
 

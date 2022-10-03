@@ -4,11 +4,11 @@ import dateFormat from 'dateformat';
 function CNNArticlesCard ({ cnnArticle }) {
     return (
         <div className="col-md-3">
-            <div className="card">
+            <div className="card mb-2">
                 <img src={cnnArticle.urlToImage} className="card-img-top" alt="CNN Article"/>
                 <div className="card-body">
                     <h6>{cnnArticle.title}</h6>
-                    <p className="card-text">{cnnArticle.description.substring(0, 110)}...</p>
+                    <p className="card-text"><small>{cnnArticle.description.substring(0, 110)}...</small></p>
                     <div className="d-flex justify-content-between">
                         <div>
                             <p><strong><span className="badge rounded-pill bg-warning text-dark"><small>{dateFormat(cnnArticle.publishedAt)}</small></span></strong></p>

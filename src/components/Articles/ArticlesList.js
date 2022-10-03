@@ -1,10 +1,10 @@
 import React from "react";
 import MainArticlesCard from "./MainArticlesCard";
 
-function ArticlesList ({ cnnArticles }) {
+function ArticlesList ({ cnnArticles, bbcArticles }) {
     return (
         <div>
-            <MainArticlesCard cnnArticles={cnnArticles}/>
+            <MainArticlesCard cnnArticles={cnnArticles} bbcArticles={bbcArticles}/>
         </div>
     )
 }
