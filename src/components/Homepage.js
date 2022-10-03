@@ -1,5 +1,6 @@
 import React from "react";
-import Headlines from "../components/Headlines/Headlines";
+import Headlines from "./Headlines/Headlines";
+import Articles from "./Articles/Articles";
 import Navbar from "./Navbar";
 
 function Homepage () {
@@ -7,6 +8,7 @@ function Homepage () {
         <>
         <Navbar/>
         <Headlines/>
+        <Articles/>
         </>
     )
 }
