@@ -1,5 +1,5 @@
 import React from "react";
-import MainHeadlinesCard from "./MainHeadlinesCard";
+import MainHeadlinesCard from "../Headlines/MainHeadlinesCard";
 
 function HeadlinesList ({ bbcHeadlines, cnnHeadlines, googleHeadlines }) {
 

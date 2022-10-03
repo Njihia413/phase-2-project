@@ -1,5 +1,5 @@
 import React from "react";
-import Headlines from "./Headlines";
+import Headlines from "../components/Headlines/Headlines";
 import Navbar from "./Navbar";
 
 function Homepage () {
