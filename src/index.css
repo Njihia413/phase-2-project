@@ -134,3 +134,16 @@ a {
   height: 460px;
 }
 
+/* footer */
+
+footer {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  padding: 15px;
+}
+
+footer .justify-content-center h5 a {
+  margin-right: 14px;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+}
