@@ -4,22 +4,22 @@ import dateFormat from 'dateformat';
 function AlJazeeraArticlesCard ({ aljazeeraArticle }) {
     return (
         <div className="col-md-3">
-        <div className="card mb-2">
-            <img src={aljazeeraArticle.urlToImage} className="card-img-top" alt="CNN Article"/>
-            <div className="card-body">
-                <h6>{aljazeeraArticle.title}</h6>
-                <p className="card-text"><small>{aljazeeraArticle.description.substring(0, 110)}...</small></p>
-                <div className="d-flex justify-content-between">
-                    <div>
-                        <p><strong><span className="badge rounded-pill bg-warning text-dark"><small>{dateFormat(aljazeeraArticle.publishedAt)}</small></span></strong></p>
-                    </div>
-                    <div className="text-center">
-                        <a href={aljazeeraArticle.url} className="color-main"><small>Read More <i className="fa fa-arrow-right"></i></small></a>
+            <div className="card mb-2">
+                <img src={aljazeeraArticle.urlToImage} className="card-img-top" alt="CNN Article"/>
+                <div className="card-body">
+                    <h6>{aljazeeraArticle.title}</h6>
+                    <p className="card-text"><small>{aljazeeraArticle.description.substring(0, 110)}...</small></p>
+                    <div className="d-flex justify-content-between">
+                        <div>
+                            <p><strong><span className="badge rounded-pill bg-warning text-dark"><small>{dateFormat(aljazeeraArticle.publishedAt)}</small></span></strong></p>
+                        </div>
+                        <div className="text-center">
+                            <a href={aljazeeraArticle.url} className="color-main"><small>Read More <i className="fa fa-arrow-right"></i></small></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     )
 }
 
