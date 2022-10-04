@@ -1,11 +1,19 @@
 import React from "react";
-import Homepage from "./Homepage";
+import Navbar from "./Navbar";
+import Headlines from "./Headlines/Headlines";
+import Articles from "./Articles/Articles";
+import Footer from "./Footer";
 
 
 function App() {
   return (
     <div className="App">
-     <Homepage/>
+     <>
+        <Navbar/>
+        <Headlines/>
+        <Articles/>
+        <Footer/>
+        </>
     </div>
   );
 }
