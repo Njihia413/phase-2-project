@@ -1,19 +1,17 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Headlines from "./Headlines/Headlines";
 import Articles from "./Articles/Articles";
-import Footer from "./Footer";
+import Sources from "./Sources/Sources";
 
 
 function App() {
   return (
     <div className="App">
      <>
-        <Navbar/>
-        <Headlines/>
-        <Articles/>
-        <Footer/>
-        </>
+      <Headlines/>
+      <Articles/>
+      <Sources/>
+    </>
     </div>
   );
 }
