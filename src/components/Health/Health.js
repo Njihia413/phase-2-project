@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import HealthCard from "./HealthCard";
 
 function Health () {
-    const healthUrl = "https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=1e0619eab0ac48a8b63e0e1820c18d7a&pageSize=12"
+    const healthUrl = "https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=12"
     const [health, setHealth] = useState([]);
 
     //Fetch Health Data
@@ -10,12 +10,12 @@ function Health () {
         fetch(`${healthUrl}`)
         .then(response => response.json())
         .then(data => setHealth(data.articles))
-    })
+    },[])
 
     const healthList = health.map((healthdata => {
         return <HealthCard
         key={healthdata.name}
-        healthdata = {healthdata}
+        healthdata={healthdata}
         />
     }))
 

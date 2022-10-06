@@ -10,7 +10,7 @@ function MainArticlesCard ({ cnnArticles, bbcArticles, aljazeeraArticles }) {
     const cnnArticlesList = cnnArticles.map((cnnArticle => {
         return (
             <CNNArticlesCard
-            key={cnnArticle.title}
+            key={cnnArticle.author}
             cnnArticle={cnnArticle}
             />
         )

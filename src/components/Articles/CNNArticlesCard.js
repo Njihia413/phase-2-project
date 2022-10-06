@@ -1,10 +1,10 @@
 import React from "react";
 import dateFormat from 'dateformat';
-import logo from "../../assets/logo.jpg"
+
 
 function CNNArticlesCard ({ cnnArticle }) {
     const { 
-        urlToImage = logo, 
+        urlToImage = "https://upload.wikimedia.org/wikipedia/commons/6/66/CNN_International_logo.svg", 
         title, 
         description, 
         publishedAt, 
@@ -14,7 +14,7 @@ function CNNArticlesCard ({ cnnArticle }) {
     return (
         <div className="col-md-3">
             <div className="card mb-2">
-                <img src={urlToImage} className="card-img-top" alt="CNN Article"/>
+                <img src={urlToImage ? urlToImage : "https://upload.wikimedia.org/wikipedia/commons/6/66/CNN_International_logo.svg"} className="card-img-top" alt="CNN Article"/>
                 <div className="card-body">
                     <h6>{title}</h6>
                     <p className="card-text"><small>{description.substring(0, 110)}...</small></p>

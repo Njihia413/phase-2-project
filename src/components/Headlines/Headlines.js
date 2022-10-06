@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import HeadlinesList from "../Headlines/HeadlinesList";
 
 function Headlines () {
-    const bbcHeadlinesUrl = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=1"
-    const cnnHeadlinesUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=2"
-    const googleHeadlinesUrl = "https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=8d7b28c098a94411822a184f130d88a5&pageSize=2"
+    const bbcHeadlinesUrl = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=1"
+    const cnnHeadlinesUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=2"
+    const googleHeadlinesUrl = "https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=2"
     const [bbcHeadlines, setbbcHeadlines] = useState([]);
     const [cnnHeadlines, setcnnHeadlines] = useState([]);
     const [googleHeadlines, setgoogleHeadlines] = useState([]);

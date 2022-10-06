@@ -3,7 +3,7 @@ import TechnologyCard from "./TechnologyCard";
 
 function Technology () {
 
-    const technologyUrl = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=1e0619eab0ac48a8b63e0e1820c18d7a&pageSize=12";
+    const technologyUrl = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=12";
     const [technologies, setTechnologies] = useState([])
 
     //Fetch Technology Articles

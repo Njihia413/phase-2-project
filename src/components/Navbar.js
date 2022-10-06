@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar () {
     return (
@@ -14,22 +15,22 @@ function Navbar () {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                     <ul className="navbar-nav nav-right">
                         <li className="nav-item">
-                            <a className="nav-link" href="/technology">technology</a>
+                            <NavLink to="/technology"  className="nav-link">technology</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/health">health</a>
+                            <NavLink to="/health"  className="nav-link">health</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/science">science</a>
+                            <NavLink to="/science"  className="nav-link">science</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/business">Business</a>
+                            <NavLink to="/business"  className="nav-link">business</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/sports">sports</a>
+                            <NavLink to="/sports"  className="nav-link">sports</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/entertainment">entertainment</a>
+                            <NavLink to="/entertainment"  className="nav-link">entertainment</NavLink>
                         </li>
                     </ul>
                  </div>
