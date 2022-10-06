@@ -5,7 +5,7 @@ function ScienceCard ({ sciencedata }) {
     return (
         <div className="col-md-3">
             <div className="card mb-2">
-                <img src={sciencedata.urlToImage} className="card-img-top" alt="CNN Article"/>
+                <img src={sciencedata.urlToImage ? sciencedata.urlToImage : "https://www.sciencenews.org/wp-content/uploads/2019/08/sn-fallback.png"} className="card-img-top" alt="Science Article"/>
                 <div className="card-body">
                     <h6>{sciencedata.title}</h6>
                     <p className="card-text"><small>{sciencedata.description?.substring(0, 110)}...</small></p>

@@ -5,7 +5,7 @@ function BusinessCard ({ businessdata }) {
     return  (
         <div className="col-md-3">
             <div className="card mb-2">
-                <img src={businessdata.urlToImage} className="card-img-top" alt="CNN Article"/>
+                <img src={businessdata.urlToImage ? businessdata.urlToImage : "https://allnews.ng/uploads/posts/2021/04/03/post-07-38-57-0.jpg"} className="card-img-top" alt="Business Article"/>
                 <div className="card-body">
                     <h6>{businessdata.title}</h6>
                     <p className="card-text"><small>{businessdata.description?.substring(0, 110)}...</small></p>

@@ -5,7 +5,7 @@ function SportsCard ({ sport }) {
     return (
         <div className="col-md-3">
             <div className="card mb-2">
-                <img src={sport.urlToImage} className="card-img-top" alt="CNN Article"/>
+                <img src={sport.urlToImage ? sport.urlToImage : "https://img.freepik.com/premium-vector/sports-news-live-background-map-world-isolated-vector-illustration_150317-318.jpg?w=740"} className="card-img-top" alt="Sports Article"/>
                 <div className="card-body">
                     <h6>{sport.title}</h6>
                     <p className="card-text"><small>{sport.description?.substring(0, 110)}...</small></p>

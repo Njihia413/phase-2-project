@@ -5,7 +5,7 @@ function HealthCard ({ healthdata }) {
     return (
         <div className="col-md-3">
             <div className="card mb-2">
-                <img src={healthdata.urlToImage} className="card-img-top" alt="CNN Article"/>
+                <img src={healthdata.urlToImage ? healthdata.urlToImage : "https://www.ishn.com/ext/resources/Generic/Responsive-default/HealthNews.jpg?1583412092"} className="card-img-top" alt="Health Article"/>
                 <div className="card-body">
                     <h6>{healthdata.title}</h6>
                     <p className="card-text"><small>{healthdata.description?.substring(0, 110)}...</small></p>

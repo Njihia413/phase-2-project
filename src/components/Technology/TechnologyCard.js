@@ -5,7 +5,7 @@ function TechnologyCard ({ technology }) {
     return (
         <div className="col-md-3">
             <div className="card mb-2">
-                <img src={technology.urlToImage} className="card-img-top" alt="CNN Article"/>
+                <img src={technology.urlToImage ? technology.urlToImage : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStOGRZXsqAHO0n9XMNx1PwKT3_AHykx8yeog&usqp=CAU"} className="card-img-top" alt="Technology Article"/>
                 <div className="card-body">
                     <h6>{technology.title}</h6>
                     <p className="card-text"><small>{technology.description?.substring(0, 110)}...</small></p>

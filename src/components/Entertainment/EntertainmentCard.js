@@ -5,7 +5,7 @@ function EntertainmentCard ({ entertainmentdata }) {
     return (
         <div className="col-md-3">
             <div className="card mb-2">
-                <img src={entertainmentdata.urlToImage} className="card-img-top" alt="CNN Article"/>
+                <img src={entertainmentdata.urlToImage ? entertainmentdata.urlToImage : "https://www.frontghana.com/wp-content/uploads/2021/09/Entertainment-News.jpeg"} className="card-img-top" alt="Entertainment Article"/>
                 <div className="card-body">
                     <h6>{entertainmentdata.title}</h6>
                     <p className="card-text"><small>{entertainmentdata.description?.substring(0, 110)}...</small></p>
