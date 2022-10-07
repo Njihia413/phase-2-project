@@ -73,7 +73,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
-  height: 80vh;
+  height: 91vh;
 }
 
 .headline-text {
@@ -99,7 +99,7 @@ a {
 }
 
 .news-right .card-image {
-  height: 220px;
+  height: 250px;
 }
 
 .news-right .news-headings a {

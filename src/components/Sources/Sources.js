@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SourcesCard from "./SourcesCard";
 
 function Sources () {
-    const sourcesUrl = "https://newsapi.org/v2/top-headlines/sources?apiKey=1e0619eab0ac48a8b63e0e1820c18d7a";
+    const sourcesUrl = "https://newsapi.org/v2/top-headlines/sources?apiKey=1cb1374b1c3949498967822f550bec03";
     const [sources, setSources] = useState([]);
 
     //Fetch News Sources

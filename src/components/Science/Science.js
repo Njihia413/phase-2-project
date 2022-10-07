@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ScienceCard from "./ScienceCard";
 
 function Science () {
-    const scienceUrl = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=12";
+    const scienceUrl = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1cb1374b1c3949498967822f550bec03&pageSize=12";
     const [science, setScience] = useState([]);
     
     //Fetch Science Data

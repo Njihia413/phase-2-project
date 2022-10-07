@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import BusinessCard from "./BusinessCard";
 
 function Business () {
-    const businessUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=12";
+    const businessUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=1cb1374b1c3949498967822f550bec03&pageSize=12";
     const [business, setBusiness] = useState([]);
 
     //Fetch Business Data

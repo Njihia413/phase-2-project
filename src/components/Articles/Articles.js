@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import ArticlesList from "./ArticlesList";
 
 function Articles () {
-    const cnnArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=8";
-    const bbcArticlesUrl  = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=8";
-    const aljazeeraArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=al-jazeera-english&apiKey=3607dcbbaf634000be15a4400888e985&pageSize=8"
+    const cnnArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=1cb1374b1c3949498967822f550bec03&pageSize=8";
+    const bbcArticlesUrl  = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=1cb1374b1c3949498967822f550bec03&pageSize=8";
+    const aljazeeraArticlesUrl = "https://newsapi.org/v2/top-headlines?sources=al-jazeera-english&apiKey=1cb1374b1c3949498967822f550bec03&pageSize=8"
     const [cnnArticles, setcnnArticles] = useState([]);
     const [bbcArticles, setbbcArticles] = useState([]);
     const [aljazeeraArticles, setaljazeeraArticles] = useState([]);
