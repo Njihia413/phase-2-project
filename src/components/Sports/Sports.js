@@ -22,7 +22,7 @@ function Sports () {
     return (
         <>
         <div className="top-news m-2">
-            <h3 className="text-uppercase headings text-center mt-5 mb-4">all news articles <br></br><small>Sports News</small></h3>
+            <h3 className="text-uppercase headings text-center mt-5">all news articles <br></br><small>Sports News</small></h3>
             <div className="row">
                 {sportsList}
             </div>
